@@ -75,8 +75,15 @@ Comparison summary:
 
 - Naïve recording:
 
+https://github.com/user-attachments/assets/16470bf7-04b6-4d94-8bb3-a0a89ac73fd0
+
+
 
 - Optimised recording:
+
+https://github.com/user-attachments/assets/b51446b1-c74c-4a21-aa62-33acdd1facf6
+
+
 
 
 
