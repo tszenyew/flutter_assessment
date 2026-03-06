@@ -16,8 +16,16 @@ class OptimisedApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.green, foregroundColor: Colors.white, elevation: 0),
-        scrollbarTheme: const ScrollbarThemeData(thumbColor: WidgetStatePropertyAll(Colors.green), thickness: WidgetStatePropertyAll(4.0), radius: Radius.circular(4.0)),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+          elevation: 0,
+        ),
+        scrollbarTheme: const ScrollbarThemeData(
+          thumbColor: WidgetStatePropertyAll(Colors.green),
+          thickness: WidgetStatePropertyAll(4.0),
+          radius: Radius.circular(4.0),
+        ),
       ),
       home: const LandingScreen(),
     );

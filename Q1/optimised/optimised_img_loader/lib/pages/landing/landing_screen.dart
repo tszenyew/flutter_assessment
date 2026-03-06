@@ -16,8 +16,12 @@ class LandingScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           spacing: 16,
           children: [
-            const Text('This is an optimised implementation of a list with 1,000 images.'),
-            const Text('It will handle performance better by optimising image loading.'),
+            const Text(
+              'This is an optimised implementation of a list with 1,000 images.',
+            ),
+            const Text(
+              'It will handle performance better by optimising image loading.',
+            ),
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -25,7 +29,11 @@ class LandingScreen extends StatelessWidget {
                 spacing: 12,
                 children: [
                   ...imgCounts.map((count) {
-                    return ElevatedButton(onPressed: () => navigateToImgListingScreen(context, count), child: Text('View $count Images'));
+                    return ElevatedButton(
+                      onPressed: () =>
+                          navigateToImgListingScreen(context, count),
+                      child: Text('View $count Images'),
+                    );
                   }),
                 ],
               ),
@@ -37,6 +45,11 @@ class LandingScreen extends StatelessWidget {
   }
 
   void navigateToImgListingScreen(BuildContext context, int imgCount) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => ImgListingScreen(imgCount: imgCount)));
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ImgListingScreen(imgCount: imgCount),
+      ),
+    );
   }
 }
